@@ -17,6 +17,8 @@ import {
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {DisplayConsentButton} from './src/components/DisplayConsentButton';
+import {UserConsentManagement} from './src/components/UserConsentManagement';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -32,6 +34,8 @@ const App = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}
       />
+      <UserConsentManagement />
+      <DisplayConsentButton />
     </SafeAreaView>
   );
 };
